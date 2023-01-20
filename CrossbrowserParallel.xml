@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+
+  <test  name="test runner-2">
+  <parameter name ="BROWSER" value="edge"></parameter>
+    <classes>
+      <class name="TestNGtestscript.DeleteOrg_recylebinTest"/>
+      <class name="TestNGtestscript.Faq_interationTesting_Test"/>
+    </classes> 
+    </test>
+    
+  <test  name="test runner-1">
+  <parameter name ="BROWSER" value="chrome"></parameter>
+    <classes>  
+      <class name="TestNGtestscript.CreateOrg_test"/>
+      <class name="TestNGtestscript.createLeadTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

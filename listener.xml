@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+<listeners>
+
+<listener class-name="com.generic.libraries.ListenerImplimentionClass"> </listener>
+</listeners>
+
+  <test thread-count="5" parallel="tests" name="Test">
+    <classes>
+      <class name="TestNGtestscript.createLeadTest"/>
+
+    </classes>s
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
